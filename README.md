@@ -4,3 +4,4 @@
 #### [Codepen 12_08](https://codepen.io/nvkuznetsova/pen/OKBwop)
 #### [Codepen 16_08](https://codepen.io/nvkuznetsova/pen/oNvxPzq)
 #### [Codepen 21_08](https://codepen.io/nvkuznetsova/pen/WNeoeKG)
+#### [Codepen 28_08](https://codepen.io/nvkuznetsova/pen/PoYmxgw)
