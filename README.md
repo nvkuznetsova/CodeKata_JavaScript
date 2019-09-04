@@ -5,3 +5,6 @@
 #### [Codepen 16_08](https://codepen.io/nvkuznetsova/pen/oNvxPzq)
 #### [Codepen 21_08](https://codepen.io/nvkuznetsova/pen/WNeoeKG)
 #### [Codepen 28_08](https://codepen.io/nvkuznetsova/pen/PoYmxgw)
+#### [Codepen 04_09_Functional](https://codepen.io/nvkuznetsova/pen/OJLxKyd)
+#### [Codepen 04_09_Prototype](https://codepen.io/nvkuznetsova/pen/BaBmQeZ)
+#### [Codepen 04_09_Classes](https://codepen.io/nvkuznetsova/pen/MWgOJjL)
