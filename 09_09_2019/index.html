@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drag and drop Cart</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-D/7uAka7uwterkSxa2LwZR7RJqH2X6jfmhkJ0vFPGUtPyBMF2WMq9S+f9Ik5jJu1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Shopping Cart</a>
+    </nav>
+
+    <div class="mt-5" id="goods">
+      <div class="row">
+        <div class="col-md-8 products">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-1">
+              <div class="card-body" data-name="apple" data-price="1">
+                <h4 class="card-title">Apple</h4>
+                <p class="card-text">Price: $1</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-2">
+              <div class="card-body" data-name="orange" data-price="2">
+                <h4 class="card-title">Orange</h4>
+                <p class="card-text">Price: $2</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-3">
+              <div class="card-body" data-name="coffee" data-price="2">
+                <h4 class="card-title">Coffee</h4>
+                <p class="card-text">Price: $2</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-4">
+              <div class="card-body" data-name="tea" data-price="1">
+                <h4 class="card-title">Tea</h4>
+                <p class="card-text">Price: $1</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-5">
+              <div class="card-body" data-name="sandwich" data-price="2">
+                <h4 class="card-title">Sandwich</h4>
+                <p class="card-text">Price: $2</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-6">
+              <div class="card-body" data-name="donut" data-price="3">
+                <h4 class="card-title">Donut</h4>
+                <p class="card-text">Price: $3</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-7">
+              <div class="card-body" data-name="salad" data-price="4">
+                <h4 class="card-title">Salad</h4>
+                <p class="card-text">Price: $4</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3 border-primary shadow-sm mx-auto product" id="product-8">
+              <div class="card-body" data-name="soup" data-price="3">
+                <h4 class="card-title">Soup</h4>
+                <p class="card-text">Price: $3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 cart" id="shopping-cart">
+          <div class="jumbotron bg-light">
+            <h4 class="display-6 text-dark text-center">Shopping Cart</h4>
+            <ul class="cart-list list-group"></ul>
+            <div class="display-5 text-info pt-3" id="total" data-total="0">Total: $0.00</div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <script src="draganddropCart.js"></script>
+</body>
+
+</html>

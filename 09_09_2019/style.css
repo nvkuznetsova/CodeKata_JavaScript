@@ -1,0 +1,8 @@
+.product {
+    min-width: 23.5%;
+    cursor: pointer;
+  }
+  
+  .delete {
+    cursor: pointer;
+  }
