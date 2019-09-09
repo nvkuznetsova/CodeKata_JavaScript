@@ -8,3 +8,4 @@
 #### [Codepen 04_09_Functional](https://codepen.io/nvkuznetsova/pen/OJLxKyd)
 #### [Codepen 04_09_Prototype](https://codepen.io/nvkuznetsova/pen/BaBmQeZ)
 #### [Codepen 04_09_Classes](https://codepen.io/nvkuznetsova/pen/MWgOJjL)
+#### [CodePen 09_09_Events](https://codepen.io/nvkuznetsova/pen/wvwyyGL)
