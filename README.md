@@ -10,3 +10,6 @@
 #### [Codepen 04_09_Classes](https://codepen.io/nvkuznetsova/pen/MWgOJjL)
 #### [CodePen 09_09_Events](https://codepen.io/nvkuznetsova/pen/wvwyyGL)
 #### [CodePen 11_09_cartModule](https://codepen.io/nvkuznetsova/pen/yLBKwKp)
+-----
+### October tasks
+#### [CodePen 07_10](https://codepen.io/nvkuznetsova/pen/rNNNXWL)
