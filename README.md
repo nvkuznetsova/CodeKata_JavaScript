@@ -3,3 +3,4 @@
 ### All solutions of tasks are in the branch with the corresponding topic name 
 
 #### [CodePen 07_10_2019](https://codepen.io/nvkuznetsova/pen/rNNNXWL)
+#### [CodePen 11_11_2019](https://codepen.io/vil-mikki/full/pooZPXP)
