@@ -4,3 +4,5 @@
 
 #### [CodePen 07_10_2019](https://codepen.io/nvkuznetsova/pen/rNNNXWL)
 #### [CodePen 11_11_2019](https://codepen.io/vil-mikki/full/pooZPXP)
+#### [CodePen 14_11_2019](https://codepen.io/vil-mikki/full/LYYgLMq)
+#### [CodePen 18_11_2019](https://codepen.io/vil-mikki/full/yLLGzbQ)
