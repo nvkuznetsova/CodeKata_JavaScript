@@ -1,0 +1,16 @@
+{
+  "name": "blog-server",
+  "version": "0.1.0",
+  "main": "server.js",
+  "author": "obozhe",
+  "license": "MTI",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "set NODE_ENV=dev && node server.js"
+  }
+}
