@@ -1,5 +1,7 @@
-# CodeKata_JavaScript (Pre-interview training)
-### The names of the branches match the names of the topics that we repeat at the training
-### All solutions of tasks are in the branch with the corresponding topic name 
+# CodeKata_JavaScript
+### Topic: Functions
 
-#### [CodePen 07_10_2019](https://codepen.io/nvkuznetsova/pen/rNNNXWL)
+#### [Codepen 16_08](https://codepen.io/nvkuznetsova/pen/oNvxPzq)
+#### [Codepen 28_08](https://codepen.io/nvkuznetsova/pen/PoYmxgw)
+#### [CodePen 14_10](https://codepen.io/nvkuznetsova/pen/oNNbrOR)
+#### [CodePen 16_10](https://codepen.io/nvkuznetsova/pen/MWWebvd)
