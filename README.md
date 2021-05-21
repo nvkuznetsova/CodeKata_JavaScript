@@ -1,5 +1,8 @@
 # CodeKata_JavaScript (Pre-interview training)
-### The names of the branches match the names of the topics that we repeat at the training
-### All solutions of tasks are in the branch with the corresponding topic name 
+### Topic: HTML/CSS
 
-#### [CodePen 07_10_2019](https://codepen.io/nvkuznetsova/pen/rNNNXWL)
+#### [CodePen 11_11_2019](https://codepen.io/vil-mikki/full/pooZPXP)
+
+#### [CodePen 12_02_2020](https://codepen.io/amshl/pen/ZEGbLXK)
+
+#### [CodePen 17_02_2020](https://codepen.io/amshl/pen/JjdXZxY)
