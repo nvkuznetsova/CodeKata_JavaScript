@@ -1,7 +1,6 @@
 # CodeKata_JavaScript
-### Topic: Functions
+### Topic: Popular Interview Tasks
 
-#### [Codepen 16_08](https://codepen.io/nvkuznetsova/pen/oNvxPzq)
-#### [Codepen 28_08](https://codepen.io/nvkuznetsova/pen/PoYmxgw)
-#### [CodePen 14_10](https://codepen.io/nvkuznetsova/pen/oNNbrOR)
-#### [CodePen 16_10](https://codepen.io/nvkuznetsova/pen/MWWebvd)
+#### [Codepen 21_08_19](https://codepen.io/nvkuznetsova/pen/WNeoeKG)
+#### [Codepen 21_08_2020](https://codepen.io/nvkuznetsova/pen/WNbWbzE)
+#### [Codepen 28_04_2021](https://codepen.io/Komaritskaya/pen/MWJRxgN)
