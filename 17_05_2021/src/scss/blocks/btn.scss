@@ -1,0 +1,17 @@
+.btn {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: $secondary-color 1px solid;
+    border-radius: 20px;
+    padding: 12px 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all ease .3s;
+
+    &:hover {
+        color: #fff;
+        background: linear-gradient(135deg, $secondary-gradient-color, $secondary-color);
+    }
+}
