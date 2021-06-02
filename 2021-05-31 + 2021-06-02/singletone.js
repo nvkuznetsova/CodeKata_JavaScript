@@ -51,33 +51,33 @@ console.log(ps1 === ps2);
 // в PaymentService при каждом запуске функции оказывается 
 // новое значеение, поэтому мы не можем сделать так
 // чтобы ps1 === ps2 => true
-function getPaymentService() {
-  const PaymentService = (function() {
-    let bills = [];
-    return {
-      getResult() {
-        return bills.reduce((prev, cur) => prev + cur);
-      },
-      addBill(bill) {
-        bills.push(bill);
-      }
-    }
-  })();
+// function getPaymentService() {
+//   const PaymentService = (function() {
+//     let bills = [];
+//     return {
+//       getResult() {
+//         return bills.reduce((prev, cur) => prev + cur);
+//       },
+//       addBill(bill) {
+//         bills.push(bill);
+//       }
+//     }
+//   })();
 
-  return PaymentService;
-}
+//   return PaymentService;
+// }
 
-const ps1 = getPaymentService();
-const ps2 = getPaymentService();
+// const ps1 = getPaymentService();
+// const ps2 = getPaymentService();
 
-ps1.addBill(400);
-ps1.addBill(200);
-ps2.addBill(400);
-ps2.addBill(400);
-console.log(ps1.getResult(),ps2.getResult(), ps1 === ps2);
+// ps1.addBill(400);
+// ps1.addBill(200);
+// ps2.addBill(400);
+// ps2.addBill(400);
+// console.log(ps1.getResult(),ps2.getResult(), ps1 === ps2);
 
 
 
-PaymentService.addBill(400);
-PaymentService.addBill(800);
-console.log(PaymentService.getResult());
+// PaymentService.addBill(400);
+// PaymentService.addBill(800);
+// console.log(PaymentService.getResult());
