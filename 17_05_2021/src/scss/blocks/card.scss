@@ -1,0 +1,95 @@
+.card {
+    background-color: $background-color;
+    width: 100%;
+    margin-bottom: 50px; // Temporary
+
+
+    &__title {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__subtitle {
+        font-family: $main-font;
+        font-size: 17px;
+        color: $main-color;
+        opacity: 0.8;
+    }
+
+    &__footer {
+        @include row;
+    }
+
+    &__price {
+        font-family: $main-font;
+        font-size: 22px;
+        font-weight: 700;
+        color: $secondary-color;
+    }
+}
+
+.card--column {
+    @include column;
+    padding: 25px;
+    min-width: 350px;
+    height: 335px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    max-width: 500px;
+    margin: 10px;
+
+    
+    & .card__header {
+        @include column;
+        z-index: 10;
+    }
+
+    & .card__footer {
+        align-self: stretch;
+        z-index: 10;
+        padding: 20px 20px 5px;
+    }
+    
+    & .card__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+}
+
+.card--row {
+    @include row;
+
+    & .card__img-container {
+        width: 140px;
+        height: 95px;
+        order: -1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    & .card__img {
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+    }
+
+    & .card__header {
+        @include row;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    & .card__footer {
+        flex-grow: 1;
+        justify-content: space-around;
+
+    }
+}
