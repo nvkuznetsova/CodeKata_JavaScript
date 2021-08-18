@@ -1,0 +1,225 @@
+@import "palette";
+@import "mixins";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: $black;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%; //Todo Check
+}
+
+.header {
+    background: $orange;
+    width: 100%;
+    height: 120px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 240px;
+    }
+
+    .cart {
+        position: relative;
+        transition: .3s;
+        padding: 15px 80px 15px 0;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background: url("../img/cartIcon.png") no-repeat center / cover;
+            width: 75px;
+            height: 75px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__count {
+            @include mainText(700, 25px, $white);
+            border-radius: 50%;
+            background: $red;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.hovered {
+            opacity: .5;
+        }
+    }
+}
+
+.main {
+    flex: 1;
+    margin: 40px 0;
+
+    .container {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+        background: $orange;
+        padding: 20px;
+    }
+
+    .sidebar__categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar__title {
+        @include mainText(700, 25px, $black);
+    }
+
+    .categories__list {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        &-item {
+            .filterButton {
+                border: none;
+                background: none;
+                cursor: pointer;
+                transition: .3s;
+                transform: scale(1);
+                @include mainText(normal, 20px, $black);
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &.interactive {
+                display: flex;
+                justify-content: space-between;
+
+                .item__buttons {
+                    .item__count {
+                        margin-right: 25px;
+                    }
+
+                    .item_btn {
+                        @include mainText(700, 18px, $white);
+                        border: none;
+                        background: $darkGrey;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover, &:focus {
+                            background: $white;
+                            color: $darkGrey;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .products__list {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-item {
+            background: $orange;
+            padding: 20px;
+            border-radius: 10px;
+
+            .product__img {
+                width: 100%;
+            }
+
+            .product__title {
+                text-overflow: ellipsis ellipsis; // TODO check this out
+                width: 100%;
+                overflow: hidden;
+                height: 50px;   
+            }
+
+            .product__btn {
+                @include mainText(700, 18px, $white);
+                width: 100%;
+                height: 37px;
+                border: none;
+                background: $darkGrey;
+                text-align: center;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover, &:focus {
+                    background: $white;
+                    color: $darkGrey;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .product__title {
+                @include mainText(normal, 20px, $black);
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+.footer {
+    background: $darkGrey;
+    margin-top: auto;
+
+    &__text {
+        @include mainText(700, 25px, $white);
+        min-height: 120px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

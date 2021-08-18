@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Coding Gym Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <a href="/">
+                    <img class="logo" src="./img/logo.png" alt="Логотип">
+                    <h1 class="site__title"></h1>
+                </a>
+    
+                <div class="cart">
+                    <span class="cart__count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <aside class="sidebar">
+                    <div class="sidebar__categories">
+                        <h2 class="sidebar__title">Категории</h2>
+
+                        <ul class="categories__list">
+                            <li class="categories__list-item" data-filter="location">
+                                <button class="filterButton">Локация</button>
+                            </li>
+                            <li class="categories__list-item" data-filter="enviroment">
+                                <button class="filterButton">Окружение</button>
+                            </li>
+                            <li class="categories__list-item" data-filter="money">
+                                <button class="filterButton">Деньги</button>
+                            </li>
+                            <li class="categories__list-item" data-filter="other">
+                                <button class="filterButton">Прочее</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar__categories sidebar__parameteres">
+                        <h2 class="sidebar__title">Список параметров</h2>
+
+                        <ul class="categories__list parameters__list">
+                            <!-- 
+
+                            <li class="categories__list-item interactive">
+                                <span class="item__name">Море</span>
+                                <div class="item__buttons">
+                                    <span class="item__count">2</span>
+                                    <button class="item_btn">+</button>
+                                    <button class="item_btn minusBtn">-</button>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="products">
+                    <ul class="products__list">
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" draggable="false" src="./img/remote.jpg" alt="удаленка" class="product__img">
+                            <h3 class="product__title">Удаленка</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/sea.jpg" alt="Море" class="product__img">
+                            <h3 class="product__title">Море</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/office.jpg" alt="Офис" class="product__img">
+                            <h3 class="product__title">Офис</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/buddy.jpg" alt="Начальник buddy" class="product__img">
+                            <h3 class="product__title">Начальник buddy</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/team.jpg" alt="Развивающаяся команда" class="product__img">
+                            <h3 class="product__title">Развивающаяся команда</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/FAANG_log.jpg" alt="Большая компания" class="product__img">
+                            <h3 class="product__title">Большая компания</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/money.jpg" alt="Большая зп" class="product__img">
+                            <h3 class="product__title">Большая зп</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                        <li class="products__list-item" draggable="true">
+                            <img draggable="false" src="./img/idea.jpg" alt="Мощная идея" class="product__img">
+                            <h3 class="product__title">Мощная идея</h3>
+                            <button class="product__btn">Добавить</button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer__text">Coding GYM 2021</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
