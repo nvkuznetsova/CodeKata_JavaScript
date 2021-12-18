@@ -2,32 +2,32 @@
 // Given an array of objects of wizards, find all Gryffindor wizards
 // And return they names
 
-// const list1 = [
-//     { name: 'Harry Potter', 
-//       faculty: 'Gryffindor' 
-//     },
-//     { name: 'Drako Malfoy', 
-//       faculty: 'Slytherin' 
-//     },
-//     { name: 'Ron Weasley', 
-//       faculty: 'Gryffindor' 
-//     },
-//     { name: 'Hermione Granger', 
-//       faculty: 'Gryffindor'
-//     },
-//     { name: 'Cedric Diggory', 
-//       faculty: 'Hufflepuff'
-//     }
-//   ];
+const list1 = [
+    { name: 'Harry Potter',
+      faculty: 'Gryffindor'
+    },
+    { name: 'Drako Malfoy',
+      faculty: 'Slytherin'
+    },
+    { name: 'Ron Weasley',
+      faculty: 'Gryffindor'
+    },
+    { name: 'Hermione Granger',
+      faculty: 'Gryffindor'
+    },
+    { name: 'Cedric Diggory',
+      faculty: 'Hufflepuff'
+    }
+  ];
 
-//   function wizards(list1) {
-//  return list1.reduce((arr, item) => {
-//     if(item.faculty === 'Gryffindor') {
-//         arr.push(item.name)
-//     }
-//     return arr;
-// }, [])
-// }
+  function wizards(list1) {
+ return list1.reduce((arr, item) => {
+    if(item.faculty === 'Gryffindor') {
+        arr.push(item.name)
+    }
+    return arr;
+}, [])
+}
 
 
 // Task 2
@@ -36,44 +36,44 @@
 // Complete the method which accepts such an array, and returns that single different number.
 // Example: [1, 1, 2] ==> 2: [17, 17, 3, 17, 17, 17, 17] ==> 3 
 
-//function stray(arr) {
-    // let res = 0;
-    // for(let i = 0; i < arr.length; i++) {
-    //     for(let j = i + 1; j < arr.length; j++ ) {
-    //         if (arr[i] !== arr[j]) {
-    //             res = arr[j]
-    //         }
-    //     }
-    // }
-    // return res
-//}
+function stray(arr) {
+    let res = 0;
+    for(let i = 0; i < arr.length; i++) {
+        for(let j = i + 1; j < arr.length; j++ ) {
+            if (arr[i] !== arr[j]) {
+                res = arr[j]
+            }
+        }
+    }
+    return res
+}
 
-// function stray(arr) {
-// let setArr = Array.from(new Set(arr));
-// let res = arr.filter(item => item === setArr[0]);
-// return res.length > 1? setArr[1] : setArr[0]
-// }
+function stray1(arr) {
+let setArr = Array.from(new Set(arr));
+let res = arr.filter(item => item === setArr[0]);
+return res.length > 1? setArr[1] : setArr[0]
+}
 
 // console.log(stray([1, 1, 2]));
 
-// function stray(arr) {
-//     let obj = {};
-//     let element;
-// arr.forEach(item => {
-//     if(item in obj) {
-//         obj[item] += 1
-//     } else {
-//         obj[item] = 1
-//     }
-// })
-// for(let el in obj) {
-//     if (obj[el] === 1) {
-//         element = el;
-//     break
-//     }
-// }
-// return element
-// }
+function stray2(arr) {
+    let obj = {};
+    let element;
+arr.forEach(item => {
+    if(item in obj) {
+        obj[item] += 1
+    } else {
+        obj[item] = 1
+    }
+})
+for(let el in obj) {
+    if (obj[el] === 1) {
+        element = el;
+    break
+    }
+}
+return element
+}
 // console.log(stray([17, 17, 2]));
 
 
@@ -83,9 +83,9 @@
 // Return your answer as a number.
 // Example: [9, 3, '7', '3']
 
-// function sumMix(arr){
-// return arr.reduce((acc, item) => acc + +item, 0)
-// }
+function sumMix(arr){
+return arr.reduce((acc, item) => acc + +item, 0)
+}
 //  console.log(sumMix([9, 3, '7', '3']));
 
 
@@ -98,16 +98,16 @@
 // Example: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
 
 
-// function countPositivesSumNegatives(nums) {
-//  return nums.reduce((res, item) => {
-//         if (item >= 0 && res[0] < item) {
-//             res[0] = item;
-//         } else {
-//             res[1] += item;
-//         }
-//         return res
-//  }, [-1, 0])
-// }
+function countPositivesSumNegatives(nums) {
+ return nums.reduce((res, item) => {
+        if (item >= 0 && res[0] < item) {
+            res[0] = item;
+        } else {
+            res[1] += item;
+        }
+        return res
+ }, [-1, 0])
+}
 // console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));
 
 
