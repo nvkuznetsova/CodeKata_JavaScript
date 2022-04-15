@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Numbers</title>
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+      <h5 class="center-align">Facts about numers</h5>
+    </div>
+    <div class="row">
+      <div class="col m3">
+        <button class="waves-effect waves-light btn-large" id="get-fact" type="button">Get Fact</button>
+      </div>
+      <div class="col m9" id="fact-block"></div>
+    </div>
+    <div class="row">
+      <div class="col m3">
+        <button class="waves-effect waves-light btn-large" id="get-few-facts" type="button">Get 5 Facts</button>
+      </div>
+      <div class="col m9" id="facts-block"></div>
+    </div>
+
+    <div class="row">
+      <div class="col m3">
+        <button class="waves-effect waves-light btn-large" id="get-fact-xhr" type="button">Get Fact (XHR)</button>
+      </div>
+      <div class="col m9" id="fact-xhr"></div>
+    </div>
+    <div class="row">
+      <div class="col m3">
+        <button class="waves-effect waves-light btn-large" id="get-few-facts-xhr" type="button">Get 5 Facts (XHR)</button>
+      </div>
+      <div class="col m9" id="facts-xhr"></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
